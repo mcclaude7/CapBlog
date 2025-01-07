@@ -1,14 +1,278 @@
+
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1> Hello... </h1>
-    <img src="{% static 'images/claude1.jpg' %}" alt="claude1">
+    <div class="en-tete">
+        <div class="menu">
+            <div class="date">03/03/2024</div>
+            <div class="links">
+                <nav>
+                    <ul>
+                        <li><a href="">Sign In</a></li>
+                        <li><a href="">Sign Out</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div> 
+    <div class="navigation-menu">
+        <div class="logo">
+            <H1><span>My</span>Brand</H1>
+        </div>
+       
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Blog">My Blog</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">&#9776;</div>
+    </div>
+    <div class="header">
+        <div class="profile">
+            <div class="profile-content">
+                <h1 >m.Claude</h1>
+
+                <h4>I build things for the web</h4>
+                
+                <p>
+                    I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. 
+                    
+                </p>
+            </div>
+            <div class="social-media">
+                <h4>Follow me on:</h4>
+                <ul>
+                    <li><a href=""><img src="images/facebook.webp" alt="facebook"></a></li>
+                    <li><a href=""><img src="images/twitter.webp" alt="twitter"></a></li>
+                    <li><a href=""><img src="images/whatsapp.webp" alt="whatsapp"></a></li>
+                </ul>               
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <h1 class="heading">A little bit About me</h1>
+        <div class="about-me">
+            <img src="images/image.jpg" alt="profile image">
+            <div class="content">
+                <h2>M.K Claude</h2>
+                <h4>Web developper</h4>
+                <p>
+                    Experienced Software Engineer with 5+ years of expertise in designing, developing, and implementing robust software solutions across various domains. 
+                    Proficient in multiple programming languages such as Java, Python, and C++, with a strong command of object-oriented programming principles and design patterns. 
+                    Adept at leveraging cutting-edge technologies and frameworks to build high-performance, scalable, and user-friendly applications.
+                </p>
+               
+                <p>
+                    If you're looking for a dedicated and skilled software engineer who can bring your vision to life, I'm the perfect fit. 
+                    Feel free to explore my portfolio and get in touch to discuss your project requirements.
+                </p>
+                <p>
+                    Thank you for visiting my website, and I look forward to the opportunity to collaborate with you!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="Skills">
+        <h1 class="heading">my skills</h1>
+        <h2>My expertise lies in:</h2>
+        <div class="skills-bar">
+                
+            <div class="frond-end">
+                <h4 class="H4-heading">Frontend Development</h4>
+                <div class="progress-bar">
+                    <div class="bar-label">HTML</div>
+                    <div class="bar-container">
+                      <div class="bar" style="width: 90%;"></div>
+                      <div class="bar-percentage">90%</div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="bar-label">CSS</div>
+                    <div class="bar-container">
+                      <div class="bar" style="width: 90%;"></div>
+                      <div class="bar-percentage">90%</div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="bar-label">JavaScript</div>
+                    <div class="bar-container">
+                      <div class="bar" style="width: 90%;"></div>
+                      <div class="bar-percentage">90%</div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="bar-label">React</div>
+                    <div class="bar-container">
+                      <div class="bar" style="width: 60%;"></div>
+                      <div class="bar-percentage">60%</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="Back-end">
+                <h4 class="H4-heading">Backend Development</h4>
+                <div class="progress-bar">
+                    <div class="bar-label">Node.js</div>
+                    <div class="bar-container">
+                      <div class="bar" style="width: 30%;"></div>
+                      <div class="bar-percentage">30%</div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="bar-label">Express</div>
+                    <div class="bar-container">
+                      <div class="bar" style="width: 40%;"></div>
+                      <div class="bar-percentage">40%</div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="bar-label">MongoDB</div>
+                    <div class="bar-container">
+                      <div class="bar" style="width: 20%;"></div>
+                      <div class="bar-percentage">20%</div>
+                    </div>
+                </div> 
+            </div>            
+        </div>
+    </div>
+    <div id="Portfolio">
+        <h1 class="heading">WHAT I'VE DONE</h1>
+        <div class="gallery">
+            <img src="images/1.png" alt="work-pic 1">
+            <img src="images/2.png" alt="work-pic 2">
+            <img src="images/3.png" alt="work-pic 3">
+            <img src="images/4.png" alt="work-pic 4">
+            <img src="images/5.png" alt="work-pic 5">
+            <img src="images/6.png" alt="work-pic 6">
+
+        </div>
+    </div>
+    <div id="Blog">
+        <h1 class="heading">My Blog</h1>
+        <div class="my-blog">
+            <div class="scrollable-section">
+                <div class="container">
+                    <img src="images/image.jpg" alt="profile image">
+                    <div class="blog-content">
+                        <h4>blog title</h4>
+                        <h6>Author</h6>
+                        <p>
+                            I am a passionate software developer with a strong foundation in computer science and programming. 
+                            With over 5 years of experience, I have worked on a variety of projects ranging from web development to mobile app development.
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="images/image.jpg" alt="profile image">
+                    <div class="blog-content">
+                        <h4>blog title</h4>
+                        <h6>Author</h6>
+                        <p>
+                            I am a passionate software developer with a strong foundation in computer science and programming. 
+                            With over 5 years of experience, I have worked on a variety of projects ranging from web development to mobile app development.
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="images/image.jpg" alt="profile image">
+                    <div class="blog-content">
+                        <h4>blog title</h4>
+                        <h6>Author</h6>
+                        <p>
+                            I am a passionate software developer with a strong foundation in computer science and programming. 
+                            With over 5 years of experience, I have worked on a variety of projects ranging from web development to mobile app development.
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="images/image.jpg" alt="profile image">
+                    <div class="blog-content">
+                        <h4 class="title">blog title</h4>
+                        <div class="author-date">
+                            <h6 class="author">Claude</h6>
+                            <h6 class="date">7/3/2024</h6>
+                        </div>
+
+                        <p>
+                            I am a passionate software developer with a strong foundation in computer science and programming. 
+                            With over 5 years of experience, I have worked on a variety of projects ranging from web development to mobile app development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="Subscription">
+                <h2>Join Our news letter!</h2>
+                <p>Receive weekly newsletters on outsourcing, tech and exclusive promotions.</p>
+                <form action="">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">Submit</button>
+                </form>      
+               
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <h1 class="heading">Contact me</h1>
+        <p>
+            Get in touch with me today! Am here to answer any question you may have and help you with your needs.
+            Simply fill out the form and send me the message or visit my social media, we will be in touch shortly.
+            I am excited to hear from you and help you achieve your goal.
+        </p>
+        <div class="my-contact">
+            <div class="contact-me">
+                <h4>Email:</h4>
+                <p>jean.muhirwaclaude@gmail.com</p>
+                <h4>Phone:</h4>
+                <p>+250 788 875 240</p> 
+                <div class="social-media">
+                    <ul>
+                        <li><a href=""><img src="images/facebook.webp" alt="facebook"></a></li>
+                        <li><a href=""><img src="images/twitter.webp" alt="twitter"></a></li>
+                        <li><a href=""><img src="images/whatsapp.webp" alt="whatsapp"></a></li>
+                        <li><a href=""><img src="images/linkedin.webp" alt="linkedin"></a></li>
+                        <li><a href=""><img src="images/github.webp" alt="github"></a></li>
+                        <li><a href=""><img src="images/gmail.webp" alt="gmail"></a></li>  
+                    </ul>               
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <input type="text" id="fname" name=email" placeholder="Your email..">
+                    <textarea id="subject" name="message" placeholder="Write a message.." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="Copy-Right">
+            <p>&copy; 2024 my brand. All rights reserved.</p>
+        </div>
+        <div class="links">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Copy-Right">
+            
+        </div>
+    </div>   
 </body>
 </html>
