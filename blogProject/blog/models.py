@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django.urls import reverse
 from django.utils.text import slugify
 
 # Custom User Model
@@ -62,7 +63,11 @@ class Blog(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return self.title
+       return self.title
+    
+    def get_absolute_url(self):
+        return reverse('blog:blog-details', kwargs={'pk': self.pk})
+    
 
 # Comment Model
 class Comment(models.Model):
