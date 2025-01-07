@@ -1,15 +1,38 @@
-{% extends 'base.html' %}
-
+{% extends 'bases.html' %}
 {% block content %}
-<div class='row'> 
-{% for instance in object_list %}
-
-    <div class="col-md-5">
-        <h5><a href="{{instance.get_absolute_url}}">{{ instance.title}}</a></h5>
-        <p>{{ instance.slug }}</p>
+<div id="Blog">
+    <h1 class="heading">My Blog</h1>
+    <div class="my-blog">
+    
+        <div class="scrollable-section">
+        {% for instance in object_list %}
+             <div class="container">
+                 <img src="images/image.jpg" alt="profile image">
+                 <div class="blog-content">
+                      <h4> {{ instance.title }} </h4>
+                      <h6> {{ instance.Author }} </h6>
+                     <p>
+                        {{ instance.summary }}
+                     </p>
+                     <h5><a href="{{instance.get_absolute_url}}">Read more ...</a></h5>
+                 </div>
+                 
+             </div>
+        {% endfor %}
+        </div>
+   
+        <div class="Subscription">
+             <h2>Join Our news letter!</h2>
+             <p>Receive weekly newsletters on outsourcing, tech and exclusive promotions.</p>
+             <form action="">
+                 <input type="email" placeholder="Email" required>
+                 <button type="submit">Submit</button>
+             </form>      
+       
+        </div>
     </div>
-
-{% endfor %}
 </div>
-
 {% endblock content %} 
+
+
+

@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="en-tete">
+        <div class="menu">
+            <div class="date">03/03/2024</div>
+            <div class="links">
+                <nav>
+                    <ul>
+                        <li><a href="">Sign In</a></li>
+                        <li><a href="">Sign Out</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div> 
+    <div class="navigation-menu">
+        <div class="logo">
+            <H1><span>My</span>Brand</H1>
+        </div>
+       
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Blog">My Blog</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">&#9776;</div>
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

@@ -1,16 +1,16 @@
-{% extends 'base.html' %}
+{% extends 'bases.html' %}
 
 {% block content %}
 
-<div class='row'>
-    
-        <div class="col-md-3">
-            <h3>{{ object.title}}</h3>
-            <p>{{ object.content }}</p> 
-            <p>{{ object.published_date }}</p>
-            <p>{{ object.author }}</p>
-            <p>{{ object.slug }}</p>
-        </div>
+<div class='detail'>
 </div>
+<div class="detail">
+    <h2>{{ object.title}}</h2>
+    <p>{{ object.content }}</p> 
+    <p>{{ object.published_date }}</p>
+    <p>{{ object.author }}</p>
+    <p>{{ object.slug }}</p>
+</div>
+
 
 {% endblock %}

@@ -17,6 +17,6 @@ class BlogDetailView(DetailView):
     template_name = 'blog_detail.html'
 
     def get_object(self):
-       id_ = self.kwargs.get('pk')
-       return get_object_or_404(Blog, pk=id_)
+       id = self.kwargs.get('pk')
+       return get_object_or_404(Blog, pk=id)
     
